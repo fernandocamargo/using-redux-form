@@ -1,0 +1,32 @@
+{
+  "name": "using-redux-form",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "classnames": "^2.2.5",
+    "express": "^4.16.3",
+    "iban": "^0.0.10",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "recompose": "^0.26.0",
+    "redux": "^3.7.2",
+    "redux-form": "^7.3.0",
+    "validator": "^9.4.1"
+  },
+  "scripts": {
+    "server": "nodemon --watch ./src/server ./src/server/index.js",
+    "start": "concurrently --kill-others-on-fail \"yarn run server\" \"react-scripts start\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.17.3"
+  },
+  "proxy": "http://localhost:3050/"
+}
